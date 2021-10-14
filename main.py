@@ -17,19 +17,19 @@ def calculate_score(cards):
 
 def compare(user_score, computer_score):
     if user_score == computer_score:
-        return "Remis"
+        return "Remis!"
     elif computer_score == 0:
         return "Przegrałeś, blackjack!"
     elif user_score == 0:
         return "Wygrałeś, blackjack!"
     elif user_score > 21:
-        return "Przekroczyłeś 21, prezgrałeś!"
+        return "Przekroczyłeś 21, przegrałeś!"
     elif computer_score > 21:
         return "Przeciwnik przekroczył 21, wygrałeś!"
     elif user_score > computer_score:
         return "Wygrałeś!"
     else:
-        return "Przegrałeś"
+        return "Przegrałeś!"
 
 def play_game():
     print(logo)
