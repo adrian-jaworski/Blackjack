@@ -1,5 +1,4 @@
 import random
-from replit import clear
 from art import logo
 
 def deal_card():
@@ -66,5 +65,4 @@ def play_game():
     print(compare(user_score, computer_score))
         
 while input("Czy chcesz zagrać w Blackjacka? 't' jeśli tak, 'n' jeśli nie: ") == "t":
-    clear()
     play_game()
